@@ -1,13 +1,14 @@
 import styled from 'styled-components'
-import Home from '../components/home/home'
+import Profile from '../components/userprofile/userprofile';
 
  const Outerbox = styled.div`
- position: fixed;
+    /* background: red; */
+    width: 100%;
  `;
 
 const index = () => (
   <Outerbox>
-    <Home/>
+    <Profile />
   </Outerbox>
 );
 export default index

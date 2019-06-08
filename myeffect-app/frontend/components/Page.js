@@ -19,11 +19,15 @@ const StylePage = styled.div`
   margin: 0px;
   color: white;
 `;
+ const Layout = styled.div`
+  display: grid;
+  grid-template-columns: 250px 1fr;
+ `;
 
 const Inner = styled.div`
+  width: 100%;
+  top: 0px;right: 0px;bottom: 0px;
   background: ${props => props.theme.grey};
-  margin-left: 50%;
-  transform: translateX(-50%);
 `;
 
 injectGlobal`
@@ -61,14 +65,17 @@ input, textarea, select, a { outline: none; }
     }
 `;
 
+// Best for Viewing Page width: 1476px height: 950px
 export default class Page extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <StylePage>
           <Meta />
-          <Navigation />
-          <Inner>{this.props.children}</Inner>
+          <Layout>
+            <Navigation />
+            <Inner>{this.props.children}</Inner>
+          </Layout>
         </StylePage>
       </ThemeProvider>
     );

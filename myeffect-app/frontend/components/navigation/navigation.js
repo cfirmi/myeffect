@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Profile from './navigationprofile'
 import Links from './links'
-import Profile from './profile'
 
 const hamburger = "'../../static/images/navigation/hamburger.svg'"
 
 const Outerbox = styled.div`
+  grid-column: 1;
   background: ${props => props.theme.lightBlue};
-  position: absolute;
-  top: 0px;bottom: 0px;left: 0px;
+  width: 15vw; height: 100vh;
+  min-width: 250px;
+  max-width: 250px;
   padding: 5px;
-  width: 250px;
   border-radius: 0px 20px 20px 0px;
+  z-index: 100;
 `;
  const Hamburger = styled.div`
   background: url(${hamburger});
@@ -19,7 +21,7 @@ const Outerbox = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 35px; right: 40px;
+  top: 35px; left: 170px;
   height: 40px; width: 40px;
  `;
 
