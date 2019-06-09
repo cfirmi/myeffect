@@ -142,8 +142,10 @@ var theme = {
   yellow: '#FFD430',
   darkBlue: '#035899',
   grey: '#696969',
+  darkGrey: '#0D0C0C',
   white: '#fff',
   black: '#000',
+  title: '20px',
   bsblack: '0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3)'
 };
 var StylePage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
@@ -157,9 +159,7 @@ var Layout = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withC
 var Inner = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Page__Inner",
   componentId: "sc-1e1vfdf-2"
-})(["width:100%;top:0px;right:0px;bottom:0px;background:", ";"], function (props) {
-  return props.theme.grey;
-});
+})(["width:100%;top:0px;right:0px;bottom:0px;"]);
 Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["injectGlobal"])(_templateObject()); // Best for Viewing Page width: 1476px height: 950px
 
 var Page =
@@ -180,37 +180,37 @@ function (_Component) {
         theme: theme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 74
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StylePage, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 75
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 76
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Layout, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 77
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navigation_navigation__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 78
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Inner, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 79
         },
         __self: this
       }, this.props.children))));
