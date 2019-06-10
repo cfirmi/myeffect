@@ -15,6 +15,10 @@ position: absolute;
   padding: 5px;
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
  const Hamburger = styled.div`
   background: url(${hamburger});

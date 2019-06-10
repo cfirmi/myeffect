@@ -5,7 +5,6 @@ import styled from 'styled-components'
 const joinbutton = () => (
   <div>
     Join 
-    {/* HI */}
     hello
   </div>
 )
