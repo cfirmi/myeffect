@@ -41,12 +41,9 @@ class links extends Component {
         { id: uuid(), name: "Actions", icon: "../../static/images/navigation/icon-actions.svg" },
         { id: uuid(), name: "Members", icon: "../../static/images/navigation/icon-members.svg" },
         { id: uuid(), name: "Mail", icon: "../../static/images/navigation/icon-mail.svg" },
-<<<<<<< HEAD
         { id: uuid(), name: "Performance", icon: "../../static/images/navigation/icon-performance.svg" },
-        { id: uuid(), name: "Settings", icon: "../../static/images/navigation/icon-settings.svg" }
-=======
+        { id: uuid(), name: "Settings", icon: "../../static/images/navigation/icon-settings.svg" },
         { id: uuid(), name: "Performance", icon: "../../static/images/navigation/icon-performance.svg" }
->>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
       ]
     }
   }
