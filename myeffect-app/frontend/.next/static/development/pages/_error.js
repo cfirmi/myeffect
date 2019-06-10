@@ -4710,12 +4710,20 @@ module.exports = __webpack_require__(/*! ./dist/lib/error */ "./node_modules/nex
 
 /***/ "./node_modules/next/node_modules/prop-types/checkPropTypes.js":
 /*!***************************************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/next/node_modules/prop-types/checkPropTypes.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/next/node_modules/prop-types/checkPropTypes.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/next/node_modules/prop-types/checkPropTypes.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/next/node_modules/prop-types/checkPropTypes.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -5323,34 +5331,58 @@ if (true) {
 
 /***/ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*************************************************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/object-assign/index.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/object-assign/index.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/react/index.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/react/index.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/react/index.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -6142,20 +6174,34 @@ if (hadRuntime) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __NEXT_REGISTER_PAGE('/_error', function() {
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /Users/christian/Desktop/myeffect/myeffect-app/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+=======
+module.exports = __webpack_require__(/*! /Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 return { page: module.exports.default }});
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "dll-reference dll_114c37924188cb7dc18b":
 /*!*******************************************!*\
   !*** external "dll_114c37924188cb7dc18b" ***!
+=======
+/***/ "dll-reference dll_0f247e9cceb355cd81a4":
+/*!*******************************************!*\
+  !*** external "dll_0f247e9cceb355cd81a4" ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = dll_114c37924188cb7dc18b;
+=======
+module.exports = dll_0f247e9cceb355cd81a4;
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ })
 

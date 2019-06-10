@@ -13,7 +13,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+<<<<<<< HEAD
 var _jsxFileName = "/Users/christian/Desktop/myeffect/myeffect-app/frontend/components/Meta.js";
+=======
+var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/Meta.js";
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 
 
@@ -100,7 +104,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Meta */ "./components/Meta.js");
 /* harmony import */ var _navigation_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navigation/navigation */ "./components/navigation/navigation.js");
+<<<<<<< HEAD
 var _jsxFileName = "/Users/christian/Desktop/myeffect/myeffect-app/frontend/components/Page.js";
+=======
+var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/Page.js";
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -237,11 +245,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+<<<<<<< HEAD
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var uuid_v4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uuid/v4 */ "./node_modules/uuid/v4.js");
 /* harmony import */ var uuid_v4__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(uuid_v4__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/christian/Desktop/myeffect/myeffect-app/frontend/components/navigation/links.js";
+=======
+/* harmony import */ var uuid_v4__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! uuid/v4 */ "./node_modules/uuid/v4.js");
+/* harmony import */ var uuid_v4__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(uuid_v4__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/navigation/links.js";
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -264,11 +278,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+<<<<<<< HEAD
 
 var Outerbox = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "links__Outerbox",
   componentId: "nid8fk-0"
 })(["width:80%;margin-left:50%;transform:translateX(-50%);a{color:white;}"]);
+=======
+var Outerbox = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "links__Outerbox",
+  componentId: "nid8fk-0"
+})(["width:80%;margin-left:50%;transform:translateX(-50%);"]);
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 var InnerBox = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "links__InnerBox",
   componentId: "nid8fk-1"
@@ -295,6 +316,7 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(links).call(this, props));
     _this.state = {
       navItems: [{
+<<<<<<< HEAD
         id: uuid_v4__WEBPACK_IMPORTED_MODULE_3___default()(),
         name: "Feed",
         icon: "../../static/images/navigation/icon-feed.svg"
@@ -322,6 +344,31 @@ function (_Component) {
         id: uuid_v4__WEBPACK_IMPORTED_MODULE_3___default()(),
         name: "Settings",
         icon: "../../static/images/navigation/icon-settings.svg"
+=======
+        id: uuid_v4__WEBPACK_IMPORTED_MODULE_2___default()(),
+        name: "Feed",
+        icon: "../../static/images/navigation/icon-feed.svg"
+      }, {
+        id: uuid_v4__WEBPACK_IMPORTED_MODULE_2___default()(),
+        name: "Recognition",
+        icon: "../../static/images/navigation/icon-recognition.svg"
+      }, {
+        id: uuid_v4__WEBPACK_IMPORTED_MODULE_2___default()(),
+        name: "Actions",
+        icon: "../../static/images/navigation/icon-actions.svg"
+      }, {
+        id: uuid_v4__WEBPACK_IMPORTED_MODULE_2___default()(),
+        name: "Members",
+        icon: "../../static/images/navigation/icon-members.svg"
+      }, {
+        id: uuid_v4__WEBPACK_IMPORTED_MODULE_2___default()(),
+        name: "Mail",
+        icon: "../../static/images/navigation/icon-mail.svg"
+      }, {
+        id: uuid_v4__WEBPACK_IMPORTED_MODULE_2___default()(),
+        name: "Performance",
+        icon: "../../static/images/navigation/icon-performance.svg"
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
       }]
     };
     return _this;
@@ -333,6 +380,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 45
         },
         __self: this
@@ -355,22 +403,44 @@ function (_Component) {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 49
+=======
+          lineNumber: 40
+        },
+        __self: this
+      }, this.state.navItems.map(function (item) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InnerBox, {
+          key: item.id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavIcon, {
           src: item.icon,
           __source: {
             fileName: _jsxFileName,
+<<<<<<< HEAD
             lineNumber: 50
+=======
+            lineNumber: 43
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
           __source: {
             fileName: _jsxFileName,
+<<<<<<< HEAD
             lineNumber: 51
           },
           __self: this
         }, item.name))));
+=======
+            lineNumber: 44
+          },
+          __self: this
+        }, item.name));
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
       }));
     }
   }, {
@@ -379,7 +449,11 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Outerbox, {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 61
+=======
+          lineNumber: 52
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }, this.renderNavItems());
@@ -408,7 +482,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _navigationprofile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navigationprofile */ "./components/navigation/navigationprofile.js");
 /* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./links */ "./components/navigation/links.js");
+<<<<<<< HEAD
 var _jsxFileName = "/Users/christian/Desktop/myeffect/myeffect-app/frontend/components/navigation/navigation.js";
+=======
+var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/navigation/navigation.js";
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -436,7 +514,11 @@ var hamburger = "'../../static/images/navigation/hamburger.svg'";
 var Outerbox = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "navigation__Outerbox",
   componentId: "fudekm-0"
+<<<<<<< HEAD
 })(["position:absolute;background:", ";grid-column:1;width:15vw;height:100%;min-width:250px;max-width:250px;padding:5px;border-radius:0px 20px 20px 0px;z-index:100;overflow-y:scroll;::-webkit-scrollbar{display:none;}"], function (props) {
+=======
+})(["position:absolute;background:", ";grid-column:1;width:15vw;height:100%;min-width:250px;max-width:250px;padding:5px;border-radius:0px 20px 20px 0px;z-index:100;"], function (props) {
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   return props.theme.lightblue;
 });
 var Hamburger = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
@@ -461,37 +543,61 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Outerbox, {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 37
+=======
+          lineNumber: 33
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 38
+=======
+          lineNumber: 34
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navigationprofile__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 39
+=======
+          lineNumber: 35
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 40
+=======
+          lineNumber: 36
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 41
+=======
+          lineNumber: 37
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_links__WEBPACK_IMPORTED_MODULE_3__["default"], {
         __source: {
           fileName: _jsxFileName,
+<<<<<<< HEAD
           lineNumber: 42
+=======
+          lineNumber: 38
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         },
         __self: this
       }));
@@ -518,7 +624,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+<<<<<<< HEAD
 var _jsxFileName = "/Users/christian/Desktop/myeffect/myeffect-app/frontend/components/navigation/navigationprofile.js";
+=======
+var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/navigation/navigationprofile.js";
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -701,6 +811,7 @@ module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "./no
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
@@ -712,6 +823,8 @@ module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ ".
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -7341,6 +7454,7 @@ module.exports = __webpack_require__(/*! ../modules/core.is-iterable */ "./node_
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/core-js/library/fn/json/stringify.js":
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/fn/json/stringify.js ***!
@@ -7357,6 +7471,8 @@ module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/core-js/library/fn/object/assign.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/assign.js ***!
@@ -10988,6 +11104,7 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/define-properties/index.js":
 /*!*************************************************!*\
   !*** ./node_modules/define-properties/index.js ***!
@@ -11058,6 +11175,8 @@ module.exports = defineProperties;
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/fast-json-stable-stringify/index.js":
 /*!**********************************************************!*\
   !*** ./node_modules/fast-json-stable-stringify/index.js ***!
@@ -11217,6 +11336,7 @@ module.exports = hyphenateStyleName;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/function-bind/implementation.js":
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
@@ -11298,6 +11418,8 @@ module.exports = Function.prototype.bind || implementation;
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/graphql-anywhere/lib/async.js":
 /*!****************************************************!*\
   !*** ./node_modules/graphql-anywhere/lib/async.js ***!
@@ -31171,6 +31293,7 @@ function assertValidSDLExtension(documentAST, schema) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/has-symbols/shams.js":
 /*!*******************************************!*\
   !*** ./node_modules/has-symbols/shams.js ***!
@@ -31242,6 +31365,8 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
 /*!**********************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
@@ -34915,6 +35040,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/next/dist/lib/link.js":
 /*!********************************************!*\
   !*** ./node_modules/next/dist/lib/link.js ***!
@@ -35167,6 +35293,8 @@ exports.default = _default;
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/next/dist/lib/p-queue.js":
 /*!***********************************************!*\
   !*** ./node_modules/next/dist/lib/p-queue.js ***!
@@ -36774,6 +36902,7 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/next/link.js":
 /*!***********************************!*\
   !*** ./node_modules/next/link.js ***!
@@ -36789,11 +36918,20 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 /***/ "./node_modules/next/node_modules/prop-types/checkPropTypes.js":
 /*!***************************************************************************************************************************!*\
   !*** delegated ./node_modules/next/node_modules/prop-types/checkPropTypes.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+/***/ "./node_modules/next/node_modules/prop-types/checkPropTypes.js":
+/*!***************************************************************************************************************************!*\
+  !*** delegated ./node_modules/next/node_modules/prop-types/checkPropTypes.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/next/node_modules/prop-types/checkPropTypes.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/next/node_modules/prop-types/checkPropTypes.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -37401,12 +37539,20 @@ if (true) {
 
 /***/ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*************************************************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -37943,11 +38089,16 @@ module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/object-assign/index.js");
 
 /***/ }),
@@ -38302,6 +38453,9 @@ module.exports = function shimAssign() {
 	return polyfill;
 };
 
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/object-assign/index.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -39191,6 +39345,7 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/prop-types-exact/build/helpers/isPlainObject.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/prop-types-exact/build/helpers/isPlainObject.js ***!
@@ -39280,6 +39435,8 @@ module.exports = exports['default'];
 
 /***/ }),
 
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 /***/ "./node_modules/querystring-es3/decode.js":
 /*!************************************************!*\
   !*** ./node_modules/querystring-es3/decode.js ***!
@@ -44757,12 +44914,20 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/react/index.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/react/index.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/react/index.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -50931,12 +51096,20 @@ module.exports = v4;
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
+<<<<<<< HEAD
   !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_114c37924188cb7dc18b ***!
+=======
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_0f247e9cceb355cd81a4 ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = (__webpack_require__(/*! dll-reference dll_114c37924188cb7dc18b */ "dll-reference dll_114c37924188cb7dc18b"))("./node_modules/webpack/buildin/global.js");
+=======
+module.exports = (__webpack_require__(/*! dll-reference dll_0f247e9cceb355cd81a4 */ "dll-reference dll_0f247e9cceb355cd81a4"))("./node_modules/webpack/buildin/global.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ }),
 
@@ -51683,7 +51856,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
 /* harmony import */ var _lib_withData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/withData */ "./lib/withData.js");
 
+<<<<<<< HEAD
 var _jsxFileName = "/Users/christian/Desktop/myeffect/myeffect-app/frontend/pages/_app.js";
+=======
+var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/pages/_app.js";
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -51839,14 +52016,24 @@ return { page: module.exports.default }});
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "dll-reference dll_114c37924188cb7dc18b":
 /*!*******************************************!*\
   !*** external "dll_114c37924188cb7dc18b" ***!
+=======
+/***/ "dll-reference dll_0f247e9cceb355cd81a4":
+/*!*******************************************!*\
+  !*** external "dll_0f247e9cceb355cd81a4" ***!
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = dll_114c37924188cb7dc18b;
+=======
+module.exports = dll_0f247e9cceb355cd81a4;
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 /***/ })
 

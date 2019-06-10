@@ -112,7 +112,11 @@ module.exports = __webpack_require__(/*! next/error */ "next/error")
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! /Users/christian/Desktop/myeffect/myeffect-app/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+=======
+module.exports = __webpack_require__(/*! /Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/node_modules/next/dist/pages/_error.js */"./node_modules/next/dist/pages/_error.js");
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 
 
 /***/ }),

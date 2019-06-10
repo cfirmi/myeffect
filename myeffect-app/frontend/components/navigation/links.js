@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+<<<<<<< HEAD
 import Link from 'next/link'
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
 import uuid from "uuid/v4";
 
  const Outerbox = styled.div`
@@ -8,9 +11,12 @@ import uuid from "uuid/v4";
   width: 80%;
   margin-left: 50%;
   transform: translateX(-50%);
+<<<<<<< HEAD
   a {
     color:white;
   }
+=======
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
  `;
   const InnerBox = styled.div`
     display: flex;
@@ -35,8 +41,12 @@ class links extends Component {
         { id: uuid(), name: "Actions", icon: "../../static/images/navigation/icon-actions.svg" },
         { id: uuid(), name: "Members", icon: "../../static/images/navigation/icon-members.svg" },
         { id: uuid(), name: "Mail", icon: "../../static/images/navigation/icon-mail.svg" },
+<<<<<<< HEAD
         { id: uuid(), name: "Performance", icon: "../../static/images/navigation/icon-performance.svg" },
         { id: uuid(), name: "Settings", icon: "../../static/images/navigation/icon-settings.svg" }
+=======
+        { id: uuid(), name: "Performance", icon: "../../static/images/navigation/icon-performance.svg" }
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
       ]
     }
   }
@@ -44,6 +54,7 @@ class links extends Component {
     return(
       <div>
         {this.state.navItems.map(item => (
+<<<<<<< HEAD
           <Link href="/settings">
           <a>
             <InnerBox key={item.id}>
@@ -52,6 +63,12 @@ class links extends Component {
             </InnerBox>
           </a>
           </Link>
+=======
+          <InnerBox key={item.id}>
+              <NavIcon src={item.icon} />
+              <Title>{item.name}</Title>
+          </InnerBox>
+>>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
         ))}
       </div>
     )
