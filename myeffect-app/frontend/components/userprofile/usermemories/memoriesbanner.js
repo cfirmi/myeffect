@@ -7,9 +7,10 @@ import {Title} from '../../styles/Titles'
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 100px;
   grid-template-rows: 50px;
+  margin-bottom: 10px;
  `;
   const SeeMore = styled.div`
-  color: ${props => props.theme.lightBlue};
+  color: ${props => props.theme.lightblue};
   grid-column: -1;
   line-height: 75px;
   cursor: pointer;

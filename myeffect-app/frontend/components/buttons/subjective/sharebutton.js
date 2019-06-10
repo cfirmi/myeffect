@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
  const Button = styled.button`
-  background: ${props => props.theme.lightBlue};
+  background: ${props => props.theme.lightblue};
   width: 90px; height: 34px;
   border-radius: 7px;
   font-size: 15px;

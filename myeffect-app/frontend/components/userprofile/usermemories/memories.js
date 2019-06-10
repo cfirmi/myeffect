@@ -4,7 +4,7 @@ import MemoriesBanner from './memoriesbanner'
 import MemoriesGallery from './memoriesgallery'
  
 const Outerbox = styled.div`
-grid-row: -1;
+grid-row: 6;
 grid-column: 1 / -1;
 `;
 

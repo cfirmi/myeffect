@@ -25,11 +25,6 @@ export default class infotile extends Component {
         <p>
         {name}
         </p>
-        {/* <p>
-          {
-            !{hours} == 0 ? <p>{dollars}</p> : <p>{people}</p>
-          }
-        </p> */}
       </Outerbox>
     )
   }

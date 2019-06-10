@@ -4,8 +4,8 @@ import Meta from '../components/Meta'
 import Navigation from './navigation/navigation'
 
 const theme = {
-  // lightBlue: '#00B8F1',
-  lightBlue: '#1BA2E7',
+  lighterblue: '#00B8F1',
+  lightblue: '#1BA2E7',
   yellow: '#FFD430',
   darkBlue: '#035899',
   grey: '#696969',
@@ -16,14 +16,14 @@ const theme = {
   bsblack: '0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3)'
   };
 const StylePage = styled.div`
-  /* background: ${props => props.theme.lightBlue}; */
+  /* background: ${props => props.theme.lightblue}; */
   width: 100vw; height: 100vh;
   margin: 0px;
   color: white;
 `;
  const Layout = styled.div`
-  display: grid;
-  grid-template-columns: 250px 1fr;
+
+  height: 100vh;
  `;
 
 const Inner = styled.div`
@@ -39,7 +39,6 @@ injectGlobal`
   font-style: normal;
 }
 input, textarea, select, a { outline: none; }
-
   html {
     font-size: 10px;
     color: black;

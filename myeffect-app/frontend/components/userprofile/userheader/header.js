@@ -17,7 +17,7 @@ const notification = '../../static/images/profile/header/headerImage/icon-notifi
 
   const Notification = styled.img`
    position: absolute;
-   top: 35px; right: 20px;
+   top: 35px; right: 40px;
    height: 20px;
    z-index: 100;
   `;
@@ -28,7 +28,7 @@ export default class header extends Component {
       <Outerbox>
         <HeaderProfile user={this.props.user} />
         <HeaderBanner user={this.props.user} />
-        <Notification src={notification} alt="my-effect notification"/>
+        <Notification src={notification} alt="my-effect notification" />
         <HeaderShare />
       </Outerbox>
     )

@@ -5,7 +5,7 @@ import styled from 'styled-components'
   position: relative;
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-top: -100px;
+  margin-top: -130px;
   margin-left: 50%;
   transform: translateX(-50%);
   z-index: 10;

@@ -21,12 +21,12 @@ export default class infotiles extends Component {
 
   render() {
     return (
-        <Outerbox>
-          <div style={{width: '100px'}}></div>
-          {this.props.tiles.map((tile) => (
-            <InfoTile key={tile.id} {...tile} />
-            ))}
-        </Outerbox>
+      <Outerbox>
+        <div style={{width: '100px'}}></div>
+        {this.props.tiles.map((tile) => (
+          <InfoTile key={tile.id} {...tile} />
+          ))}
+      </Outerbox>
     )
   }
 }
@@ -34,7 +34,7 @@ export default class infotiles extends Component {
  const Outerbox = styled.div`
   grid-column: 1 /-1;
   grid-row: 1;
-  width: 110%;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-auto-flow: column;

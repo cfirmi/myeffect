@@ -6,9 +6,10 @@ import Links from './links'
 const hamburger = "'../../static/images/navigation/hamburger.svg'"
 
 const Outerbox = styled.div`
+position: absolute;
+  background: ${props => props.theme.lightblue};
   grid-column: 1;
-  background: ${props => props.theme.lightBlue};
-  width: 15vw; height: 100vh;
+  width: 15vw; height: 100%;
   min-width: 250px;
   max-width: 250px;
   padding: 5px;
@@ -23,6 +24,7 @@ const Outerbox = styled.div`
   position: absolute;
   top: 35px; left: 170px;
   height: 40px; width: 40px;
+  cursor: pointer;
  `;
 
 export default class navigation extends Component {
@@ -32,8 +34,8 @@ export default class navigation extends Component {
         <Hamburger />
         <Profile />
         <br/>
+        <br/>
         <Links />
-        
       </Outerbox>
     )
   }
