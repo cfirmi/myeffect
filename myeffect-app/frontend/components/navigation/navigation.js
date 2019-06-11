@@ -6,8 +6,8 @@ import Links from './links'
 const hamburger = "'../../static/images/navigation/hamburger.svg'"
 
 const Outerbox = styled.div`
-position: absolute;
   background: ${props => props.theme.lightblue};
+  position: absolute;
   grid-column: 1;
   width: 15vw; height: 100%;
   min-width: 250px;
@@ -15,7 +15,7 @@ position: absolute;
   padding: 5px;
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   ::-webkit-scrollbar {
     display: none;
   }

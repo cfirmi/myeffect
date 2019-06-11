@@ -4,7 +4,6 @@ import Title from './navigationtitle'
 import Links from './links'
 
  const Outerbox = styled.div`
-  background: blue;
   margin-top: 70px;
  `;
 

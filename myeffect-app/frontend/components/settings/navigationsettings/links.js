@@ -4,35 +4,36 @@ import styled from 'styled-components'
 import uuid from "uuid/v4";
 
  const Outerbox = styled.div`
-  background: green;
-  width: 80%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin-top: 15px;
+  a {
+
+  }
  `;
-  const NavItem = styled.div`
-  background: red;
+
+ const Innerbox = styled.div`
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 0px 40px;
-  min-width: 1000px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  justify-content: space-around;
-    a {
-      color: white;
-    }
+  grid-gap: 9px;
+  `;
+ const NavItem = styled.div`
+ background: #fff;
+ height: 30px;
+ border-radius: 12px 12px 0px 0px;
+ input:active, input:focus{
+   color: ${props => props.theme.lightblue};
+    box-shadow: ${props => props.theme.bsblack};
+  }
   `;
  const Title = styled.div`
-  border: 2px solid black;
-  width: 100%; height: 40px;
-  font-size: 17px;
-  line-height: 40px;
-  border-radius: 10px 10px 0px 0px;
-  padding: 0px 10px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: black;
   input:active, input:focus{
     box-shadow: ${props => props.theme.bsblack};
-}
+  }
  `;
  
 class links extends Component {
@@ -49,17 +50,21 @@ class links extends Component {
       ]
     }
   }
+
+
   renderNavItems() {
     return(
-      <NavItem>
+      <Innerbox>
         {this.state.navItems.map(item => (
-          <Link key={item.id} href={`/${item.link}`}>
-            <a>
-              <Title>{item.name}</Title>
-            </a>
-          </Link>
+          <NavItem style={{width: `${item.name.length * 11}px`}}>
+            <Link key={item.id} href={`/${item.link}`}>
+              <a>
+                <Title>{item.name}</Title>
+              </a>
+            </Link>
+          </NavItem>
         ))}
-      </NavItem>
+      </Innerbox>
     )
   }
   render() {
