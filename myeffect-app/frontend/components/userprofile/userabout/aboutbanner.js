@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import {Title} from '../../styles/Titles'
+import {ProfileTitle} from '../../styles/Titles'
 
 
  const Outerbox = styled.div`
@@ -12,7 +12,7 @@ export default class aboutbanner extends Component {
   render() {
     return (
       <Outerbox>
-        <Title>About</Title>
+        <ProfileTitle>About</ProfileTitle>
       </Outerbox>
     )
   }

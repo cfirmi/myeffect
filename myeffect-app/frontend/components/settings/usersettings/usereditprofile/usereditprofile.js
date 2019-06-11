@@ -1,12 +1,28 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import UserPhoto from './userphoto'
+import UserAbout from './userabout'
+import UserInfo from './userinfo'
+import UserLinks from './userlinks'
+
+ const Outerbox = styled.div`
+  margin-top: 20px;
+  margin-left: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 300px 1fr 1fr 1fr 1fr 1fr;
+ `;
 
 export default class usereditprofile extends Component {
-    render() {
-        return (
-            <div>
-                <UserPhoto />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <Outerbox>
+        <UserPhoto />
+        <UserAbout />
+        <UserInfo />
+        <UserLinks />
+      </Outerbox>
+    )
+  }
 }

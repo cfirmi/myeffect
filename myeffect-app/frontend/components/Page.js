@@ -5,12 +5,14 @@ import Navigation from './navigation/navigation'
 
 const theme = {
   lighterblue: '#00B8F1',
-  lightblue: '#1BA2E7',
+  lightblue: "#1BA2E7",
   yellow: '#FFD430',
   darkBlue: '#035899',
   grey: '#696969',
+  lightgrey: '#C0B0B2',
   darkGrey: '#0D0C0C',
   white: '#fff',
+  inputbg: '#C1CAD750',
   black: '#000',
   title: '20px',
   bsblack: '0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3)'
@@ -20,6 +22,7 @@ const StylePage = styled.div`
   width: 100vw; height: 100vh;
   margin: 0px;
   color: white;
+
 `;
  const Layout = styled.div`
 
@@ -45,25 +48,41 @@ input, textarea, select, a { outline: none; }
     color: black;
     max-width: 100%;
     overflow-x: hidden;
-    
+    caret-color: ${theme.lightblue};
+    }
+    input {
+      font-size: 17px;
+      color: ${theme.darkGrey}
     }
     * , *:before, *:after {
       box-sizing: border-box;
       font-smooth: auto;
+
     }
+    *::selection { background: ${theme.darkGrey}; }
+    *::-moz-selection { background: ${theme.darkGrey}; }
+    *::-webkit-selection { background: ${theme.darkGrey}; }
     body {
+      
       padding: 0;
       margin: 0;
       font-size: 1.5rem;
       line-height: 2;
       font-family: 'Roboto';
       overflow-x: hidden;
+
       ::-webkit-scrollbar { 
         display: none; 
       }
     }
     a {
       text-decoration: none;
+      
+    }
+    img {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
     }
 `;
 

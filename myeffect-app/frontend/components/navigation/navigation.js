@@ -16,6 +16,7 @@ const Outerbox = styled.div`
   border-radius: 0px 20px 20px 0px;
   z-index: 100;
   overflow-y: scroll;
+  scrollbar-width: none;
   ::-webkit-scrollbar {
     display: none;
   }

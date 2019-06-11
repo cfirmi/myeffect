@@ -4,7 +4,7 @@ import NavigationSettings from './navigationsettings/navigationsettings'
 import UserSettings from './usersettings/usersettings'
 
 const Outerbox = styled.div`
-  background: pink;
+  /* background: pink; */
   grid-column: 2 / -1;
 `;
 

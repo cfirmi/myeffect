@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Title = styled.p`
+const ProfileTitle = styled.p`
   font-weight: 200;
   color: ${props => props.theme.darkGrey};
   font-size: 28px;
@@ -8,7 +8,7 @@ const Title = styled.p`
   line-height: 23px;
  `;
 
-const About = styled.p`
+const ProfileAbout = styled.p`
   font-weight: 200;
   font-size: 17px;
   text-align: left;
@@ -16,4 +16,23 @@ const About = styled.p`
   color: ${props => props.theme.darkGrey};
   margin-top: -20px;
   `;
-export { Title, About } 
+
+const SettingsTitle = styled.div`
+  /* background: red; */
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: 20px;
+  line-height: 40px;
+  color: ${props => props.theme.grey};
+`;
+const SettingsSubTitle = styled.div`
+  /* background: red; */
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: 16px;
+  line-height: 40px;
+  color: ${props => props.theme.lightgrey};
+`;
+
+
+export { ProfileTitle, ProfileAbout, SettingsTitle, SettingsSubTitle } 
