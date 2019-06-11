@@ -29,6 +29,7 @@ const StylePage = styled.div`
 const Inner = styled.div`
   width: 100%;
   top: 0px;right: 0px;bottom: 0px;
+  grid-column: 2 / -1;
   /* background: ${props => props.theme.grey}; */
 `;
 

@@ -1,10 +1,6 @@
 {
   "devFiles": [
-<<<<<<< HEAD
-    "static/development/dll/dll_7a8b26757e50ea09aa2d.js"
-=======
     "static/development/dll/dll_0d4720db4c95fb5b7833.js"
->>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
   ],
   "pages": {
     "/_app": [
@@ -15,18 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-<<<<<<< HEAD
     "/settings": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-=======
->>>>>>> 44ccec69416dec4070637b3c3723b816ec7d7a0a
-    "/": [
+    "/feed": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
