@@ -51,9 +51,9 @@ class links extends Component {
     return(
       <NavItem>
         {this.state.navItems.map(item => (
-          <Link href={`/${item.link}`}>
+          <Link key={item.id} href={`/${item.link}`}>
             <a>
-            <InnerBox key={item.id}>
+            <InnerBox>
               <NavIcon>
                 <img src={item.icon} alt={item.name}/>
               </NavIcon>

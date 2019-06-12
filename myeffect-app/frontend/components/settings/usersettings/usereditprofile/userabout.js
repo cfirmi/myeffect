@@ -37,7 +37,7 @@ export default class userabout extends Component {
         <SettingsTitle>Profile Description</SettingsTitle>
         <InputBox>
           <SettingsSubTitle>About</SettingsSubTitle>
-          <TextInput type="text" />
+          <TextInput contenteditable="true" type="text" placeholder={this.props.user.about} />
         </InputBox>
       </Outerbox>
     )

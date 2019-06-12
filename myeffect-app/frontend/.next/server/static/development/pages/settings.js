@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -535,6 +535,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _navigationsettings_navigationsettings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navigationsettings/navigationsettings */ "./components/settings/navigationsettings/navigationsettings.js");
 /* harmony import */ var _usersettings_usersettings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./usersettings/usersettings */ "./components/settings/usersettings/usersettings.js");
+/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jwt-decode */ "jwt-decode");
+/* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jwt_decode__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settings.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -559,6 +561,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Outerbox = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "settings__Outerbox",
   componentId: "sc-7il1nq-0"
@@ -569,31 +572,53 @@ var settings =
 function (_Component) {
   _inherits(settings, _Component);
 
-  function settings() {
+  function settings(props) {
+    var _this;
+
     _classCallCheck(this, settings);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(settings).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(settings).call(this, props));
+    _this.state = {
+      user: {
+        name: '',
+        about: '',
+        email: ''
+      }
+    };
+    return _this;
   }
 
   _createClass(settings, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var token = localStorage.usertoken;
+      var decoded = jwt_decode__WEBPACK_IMPORTED_MODULE_4___default()(token);
+      this.setState({
+        name: decoded.name,
+        email: decoded.email,
+        password: decoded.password
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Outerbox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_navigationsettings_navigationsettings__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_usersettings_usersettings__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        user: this.state.user,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 37
         },
         __self: this
       }));
@@ -701,7 +726,9 @@ function (_Component) {
         },
         __self: this
       }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
+        contenteditable: "true",
         type: "text",
+        placeholder: this.props.user.about,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40
@@ -784,31 +811,32 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Outerbox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userphoto__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userabout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        user: this.props.user,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userinfo__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 25
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userlinks__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 26
         },
         __self: this
       }));
@@ -1335,6 +1363,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_usereditprofile_usereditprofile__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        user: this.props.user,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
@@ -1500,7 +1529,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/settings.js ***!
   \*********************************/
@@ -1509,6 +1538,17 @@ function (_Component) {
 
 module.exports = __webpack_require__(/*! ./pages/settings.js */"./pages/settings.js");
 
+
+/***/ }),
+
+/***/ "jwt-decode":
+/*!*****************************!*\
+  !*** external "jwt-decode" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("jwt-decode");
 
 /***/ }),
 

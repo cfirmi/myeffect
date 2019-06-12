@@ -14,12 +14,14 @@ import UserLinks from './userlinks'
   grid-template-rows: 300px 1fr 1fr 1fr 1fr 1fr;
  `;
 
+
 export default class usereditprofile extends Component {
+
   render() {
     return (
       <Outerbox>
         <UserPhoto />
-        <UserAbout />
+        <UserAbout user={this.props.user} />
         <UserInfo />
         <UserLinks />
       </Outerbox>

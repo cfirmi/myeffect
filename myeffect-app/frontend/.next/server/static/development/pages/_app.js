@@ -446,6 +446,7 @@ function (_Component) {
         __self: this
       }, this.state.navItems.map(function (item) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+          key: item.id,
           href: "/".concat(item.link),
           __source: {
             fileName: _jsxFileName,
@@ -459,7 +460,6 @@ function (_Component) {
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InnerBox, {
-          key: item.id,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 56

@@ -5,7 +5,7 @@ export default class usersettings extends Component {
   render() {
     return (
       <div>
-        <EditProfile />
+        <EditProfile user={this.props.user} />
       </div>
     )
   }
