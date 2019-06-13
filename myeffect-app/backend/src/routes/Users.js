@@ -12,7 +12,6 @@ process.env.SECRET_KEY = 'secret'
 
 
 users.post('/register', (req, res) => {
-  const today = new Date()
   const userData = {
     name: req.body.name,
     email: req.body.email,
@@ -25,16 +24,18 @@ users.post('/register', (req, res) => {
   })
   .then(user => {
     if(!user) {
-      bcrypt.hash(req.body.password, 10, (err, hash) => {
+      const hash = bcrypt.hashSync(userData.password, 10)
         userData.password = hash
         User.create(userData)
         .then(user => {
-          res.json({ status: user.email + ' registered'})
+          let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
+            expiresIn: 1440
+          })
+          res.json({token: token })
         })
         .catch(err => {
           res.send('error: ' + err)
         })
-      })
     } else {
      res.json({ error: "User is already here" })
     }
@@ -51,19 +52,36 @@ users.post('/login', (req, res) => {
     }
   })
   .then(user => {
-    if(user) {
       if(bcrypt.compareSync(req.body.password, user.password)) {
         let token = jwt.sign(user.dataValues, process.env.SECRET_KEY, {
-          expiresIn: 1440
+          expiresIn: 1400
         })
-        res.send(token)
-      }
+        res.send({ token: token })
     } else {
-      res.status(400).json({ error: " User doesn't exist "})
+      res.send( " User doesn't exist ")
     }
   })
   .catch(err => {
-    res.status(400).json({error: err})
+    res.send('error: ' + err)
+  })
+})
+
+users.get('/profile', (req, res) => {
+  var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
+  User.findOne({
+    where: {
+      id: id.decoded.id
+    }
+  })
+  .then(user => {
+    if (user) {
+      res.json(user)
+    } else {
+      res.send('User does not exist')
+    }
+  })
+  .catch(err => {
+    res.send('error: ' + err)
   })
 })
 

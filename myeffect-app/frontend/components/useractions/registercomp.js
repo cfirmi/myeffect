@@ -16,7 +16,7 @@ export default class registercomp extends Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    const user = { 
+    const newUser = { 
       name: this.state.name,
       about: this.state.about,
       city: this.state.city,
@@ -24,9 +24,10 @@ export default class registercomp extends Component {
       useremail: this.state.useremail,
       password: this.state.password
     }
-    register(user)
+    register(newUser)
       .then(res => {
-          this.props.history.push('\login')
+        console.log(res)
+          this.props.history.push(`/login`)
       })
   }
 

@@ -31,7 +31,7 @@ const SettingsSubTitle = styled.div`
   grid-row: 1;
   font-size: 16px;
   line-height: 40px;
-  color: ${props => props.theme.lightgrey};
+  color: ${props => props.theme.grey};
 `;
 
 

@@ -8,21 +8,23 @@ export default class logincomp extends Component {
     this.state = {
       useremail: '',
       password: '',
+      errors: {}
     }
   }
   onChange = (e) => {
-    this.setState({[e.target.name] : e.target.value })
+    this.setState({ [e.target.name] : e.target.value })
   }
   onSubmit = (e) => {
     e.preventDefault()
+
     const user = { 
-      email: this.state.useremail,
+      email: this.state.email,
       password: this.state.password
     }
     login(user)
-      .then(res => {
-        this.props.history.push('\settings')
-      })
+        if (res) {
+          this.props.history.push(`/settings`)
+        }
   }
 
   render() {
