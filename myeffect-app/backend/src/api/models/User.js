@@ -13,7 +13,12 @@ module.exports = db.sequelize.define(
     type: Sequelize.STRING
   },
   email: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    validate: {
+      allowNull: true, 
+      isEmail: true,
+      isLowercase: true
+    }
   },
   password: {
     type: Sequelize.STRING

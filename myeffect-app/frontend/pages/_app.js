@@ -1,7 +1,7 @@
 import App, { Container } from 'next/app';
 import Page from '../components/Page';
-import { ApolloProvider } from 'react-apollo';
-import withData from '../lib/withData';
+import { Provider } from 'react-redux'
+import store from '../store'
 
 class MyApp extends App {
    static async getInitialProps({ Component, ctx }) {
@@ -15,11 +15,13 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <Container>
-          <Page>
-            <Component {...pageProps}/>
-          </Page>
-      </Container>
+      <Provider store={store}>
+        <Container>
+            <Page>
+              <Component {...pageProps}/>
+            </Page>
+        </Container>
+      </Provider>
     );
   }
 }

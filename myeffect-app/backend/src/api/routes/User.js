@@ -1,8 +1,11 @@
+const LocalStrategy = require('passport-local').Strategy
 const express = require('express')
 const user = express.Router()
 const cors = require('cors')
 const bcrypt = require('bcrypt')
-// const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken')
+const auth = require('../../middleware/auth')
+
 
 const User = require('../models/User')
 
@@ -14,9 +17,10 @@ user.use(cors())
 ///
 
 user.post('/signup', (req,res, next) => {
+  const { name, email, password } = req.body
   User.findAll({
     where: {
-      email: req.body.email
+      email: email
     }
   })
   .then(user => {
@@ -25,23 +29,39 @@ user.post('/signup', (req,res, next) => {
         message: "Email exists"
       });
     } else {
-      bcrypt.hash(req.body.password, 10, (err, hash) => {
+      bcrypt.hash(password, 10, (err, hash) => {
         if(err) {
           return res.status(500).json( {
             error: err
           })
         } else {
         const user = new User({
-          email: req.body.email,
+          name: name,
+          email: email,
           password:  hash
         })
         user
           .save()
           .then(result => {
             console.log(result)
-            res.status(201).json({
-              message: "User Created",
-            })
+            jwt.sign(
+              { id: user.id,
+                token: token
+              },
+              process.env.APP_SECRET,
+              { expiresIn: 3600 },
+              ( err, token ) => {
+                if(err) throw err
+                res.status(201).json({
+                  token,
+                  user: {
+                    id: user.id,
+                    name: user.name,
+                    email: user.email
+                  },
+                  message: "User Created",
+                })
+              }) 
             return user
           })
           .catch(err => {
@@ -58,6 +78,22 @@ user.post('/signup', (req,res, next) => {
 })
 
 ///
+///Sign In
+///
+
+user.get('/login', (req, res, next) => {
+  passport.authenticate('local', (err, user, info) => {
+    if (err) { return next(err); }
+    if (!user) { return res.redirect('/settings'); }
+    req.logIn(user, function(err) {
+      if (err) { return next(err); }
+      return res.redirect('/users/' + user.username);
+    });
+  })(req, res, next);
+});
+
+
+///
 ///Find User
 ///
 
@@ -67,11 +103,13 @@ user.get('/:id', (req, res, next) => {
       id: req.params.id
     }
   })
-  .then(result => {
-    console.log(result)
-    res.status(201).json({
-      message: "User Found"
-    })
+  .then(user => {
+    if( user.length < 1 ) {
+      return res.status(404).json({
+        message: "Auth failed"
+      })
+    }
+    
   })
 })
 
