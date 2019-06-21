@@ -13,23 +13,18 @@ export default class settings extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      user: {
-        name: 'Chrisitan',
-        about: 'I am a developer',
-        email: 'cpalvetzian@gmail.com'
-      }
+      user: {}
     }
   }
   componentDidMount() {
-      // const token = localStorage.usertoken
-      // const decoded = jwt_decode(token)
-    // this.setState({
-    //   name: decoded.name,
-    //   email: decoded.email,
-    //   password: decoded.password
-    // })
-  }
-  
+    // fetch("https://jsonplaceholder.typicode.com/users/1")
+    fetch("http://localhost:4444/user/21")
+    .then(response => response.json())
+    .then(data =>
+      this.setState({
+      user: data
+    }))
+}
   render() {
     return (
       <Outerbox>

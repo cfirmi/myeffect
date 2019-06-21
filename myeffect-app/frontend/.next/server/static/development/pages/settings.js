@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _settingsuser_usersettings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./settingsuser/usersettings */ "./components/settings/settingsuser/usersettings.js");
 /* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jwt-decode */ "jwt-decode");
 /* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jwt_decode__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settings.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settings.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -153,24 +153,24 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(settings).call(this, props));
     _this.state = {
-      user: {
-        name: 'Chrisitan',
-        about: 'I am a developer',
-        email: 'cpalvetzian@gmail.com'
-      }
+      user: {}
     };
     return _this;
   }
 
   _createClass(settings, [{
     key: "componentDidMount",
-    value: function componentDidMount() {// const token = localStorage.usertoken
-      // const decoded = jwt_decode(token)
-      // this.setState({
-      //   name: decoded.name,
-      //   email: decoded.email,
-      //   password: decoded.password
-      // })
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      // fetch("https://jsonplaceholder.typicode.com/users/1")
+      fetch("http://localhost:4444/user/21").then(function (response) {
+        return response.json();
+      }).then(function (data) {
+        return _this2.setState({
+          user: data
+        });
+      });
     }
   }, {
     key: "render",
@@ -178,20 +178,20 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Outerbox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_settingsnavigation_navigationsettings__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 31
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_settingsuser_usersettings__WEBPACK_IMPORTED_MODULE_3__["default"], {
         user: this.state.user,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 32
         },
         __self: this
       }));
@@ -222,7 +222,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var uuid_v4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uuid/v4 */ "uuid/v4");
 /* harmony import */ var uuid_v4__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(uuid_v4__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsnavigation/links.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsnavigation/links.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -396,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _navigationtitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navigationtitle */ "./components/settings/settingsnavigation/navigationtitle.js");
 /* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./links */ "./components/settings/settingsnavigation/links.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsnavigation/navigationsettings.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsnavigation/navigationsettings.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -482,7 +482,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsnavigation/navigationtitle.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsnavigation/navigationtitle.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -572,7 +572,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_Titles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/Titles */ "./components/styles/Titles.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userabout.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userabout.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -652,8 +652,8 @@ function (_Component) {
         __self: this
       }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
         contenteditable: "true",
-        type: "text",
-        placeholder: this.props.user.about,
+        type: "text" //  placeholder={this.props.user.height} 
+        ,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40
@@ -688,7 +688,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _userabout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./userabout */ "./components/settings/settingsuser/usereditprofile/userabout.js");
 /* harmony import */ var _userinfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./userinfo */ "./components/settings/settingsuser/usereditprofile/userinfo.js");
 /* harmony import */ var _userlinks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./userlinks */ "./components/settings/settingsuser/usereditprofile/userlinks.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/usereditprofile.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/usereditprofile.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -740,6 +740,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userphoto__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        user: this.props.user,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
@@ -753,12 +754,14 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userinfo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        user: this.props.user,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_userlinks__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        user: this.props.user,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
@@ -791,7 +794,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_Titles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/Titles */ "./components/styles/Titles.js");
 /* harmony import */ var _styles_Inputs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Inputs */ "./components/styles/Inputs.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userinfo.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userinfo.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -866,22 +869,21 @@ function (_Component) {
         contenteditable: "true",
         type: "text",
         name: "name",
-        placeholder: this.props.user.about,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
+      }, this.props.user.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         },
         __self: this
       }, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
@@ -889,19 +891,19 @@ function (_Component) {
         name: "city",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 36
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 41
         },
         __self: this
       }, "Phone Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
@@ -909,10 +911,10 @@ function (_Component) {
         name: "phone",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
-      })));
+      }, "519-504-3402")));
     }
   }]);
 
@@ -939,7 +941,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_Titles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/Titles */ "./components/styles/Titles.js");
 /* harmony import */ var _styles_Inputs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../styles/Inputs */ "./components/styles/Inputs.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userlinks.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userlinks.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -951,13 +953,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -967,10 +971,14 @@ var Outerbox = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.with
   displayName: "userlinks__Outerbox",
   componentId: "sc-1wizo0i-0"
 })(["grid-column:3 / -1;width:90%;margin-left:50%;transform:translateX(-50%);"]);
+var Columns = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "userlinks__Columns",
+  componentId: "sc-1wizo0i-1"
+})(["grid-row:2;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));max-width:900px;grid-column-gap:20px;"]);
 var InputBox = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "userlinks__InputBox",
-  componentId: "sc-1wizo0i-1"
-})(["grid-row:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:40px 60px;"]);
+  componentId: "sc-1wizo0i-2"
+})(["grid-template-rows:40px 60px;"]);
 
 var userlinks =
 /*#__PURE__*/
@@ -978,9 +986,25 @@ function (_Component) {
   _inherits(userlinks, _Component);
 
   function userlinks() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     _classCallCheck(this, userlinks);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(userlinks).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(userlinks)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "saveToState", function (e) {
+      _this.setState(_defineProperty({}, e.target.name, e.target.value));
+
+      console.log(_this.state);
+    });
+
+    return _this;
   }
 
   _createClass(userlinks, [{
@@ -989,136 +1013,148 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Outerbox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 33
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsTitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
-      }, "Social Media Links"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
-      }, "Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
-        type: "text",
-        name: "desc",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, "LinkedIn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
-        type: "text",
-        name: "desc",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 34
         },
         __self: this
-      }, "Youtube"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
-        type: "text",
-        name: "desc",
+      }, "Social Media Links"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Columns, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 37
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
+      }, "Facebook"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
+        onChange: this.saveToState,
+        type: "text",
+        name: "facebook",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
         },
         __self: this
-      }, "Instagram"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
-        type: "text",
-        name: "desc",
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 41
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
+      }, "LinkedIn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
+        onChange: this.saveToState,
+        type: "text",
+        name: "linkedIn",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
         },
         __self: this
-      }, "Twitter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
-        type: "text",
-        name: "desc",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, "Youtube"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
+        onChange: this.saveToState,
+        type: "text",
+        name: "youtube",
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 46
         },
         __self: this
-      }, "Google Plus +"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
-        type: "text",
-        name: "desc",
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 48
         },
         __self: this
-      })));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        },
+        __self: this
+      }, "Instagram"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
+        onChange: this.saveToState,
+        type: "text",
+        name: "instagram",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }, "Twitter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
+        onChange: this.saveToState,
+        type: "text",
+        name: "twitter",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InputBox, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Titles__WEBPACK_IMPORTED_MODULE_2__["SettingsSubTitle"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, "Google Plus +"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Inputs__WEBPACK_IMPORTED_MODULE_3__["SettingsInput"], {
+        onChange: this.saveToState,
+        type: "text",
+        name: "googleplus",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }))));
     }
   }]);
 
@@ -1144,7 +1180,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_editimage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../styles/editimage */ "./components/styles/editimage.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userphoto.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usereditprofile/userphoto.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1246,7 +1282,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _usereditprofile_usereditprofile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./usereditprofile/usereditprofile */ "./components/settings/settingsuser/usereditprofile/usereditprofile.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usersettings.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/settings/settingsuser/usersettings.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1320,13 +1356,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
-var SettingsInput = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.input.withConfig({
+var SettingsInput = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "Inputs__SettingsInput",
   componentId: "ax9q0j-0"
-})(["background:", ";grid-column:1 / -1;grid-row:2 / 3;border:1px solid ", ";height:50px;width:100%;padding-left:20px;border-radius:10px;vertical-align:top;"], function (props) {
+})(["background:", ";grid-column:1 / -1;grid-row:2 / 3;border:1px solid ", ";height:50px;width:100%;padding-left:20px;border-radius:10px;line-height:48px;font-size:16px;color:", ";;"], function (props) {
   return props.theme.inputbg;
 }, function (props) {
   return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.grey;
 });
 
 
@@ -1390,7 +1428,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/components/styles/editimage.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/components/styles/editimage.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1465,7 +1503,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_settings_settings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/settings/settings */ "./components/settings/settings.js");
-var _jsxFileName = "/Users/christian/Desktop/MyEffectApp/myeffect-app/frontend/pages/settings.js";
+var _jsxFileName = "/Users/christian/Desktop/MyEffect/MyEffectApp/myeffect-app/frontend/pages/settings.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 

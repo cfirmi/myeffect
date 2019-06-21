@@ -3,6 +3,10 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');
 
+// Routes
+const User = require('./api/routes/user')
+
+
 const app = express()
 const PORT = process.env.PORT || 4444
 
@@ -10,10 +14,8 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-//User Routes
-const Users = require('./routes/Users')
 
-app.use('/users', Users)
+app.use('/user', User);
 
 
 app.listen(PORT, () => {

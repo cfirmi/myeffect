@@ -27,15 +27,21 @@ export default class userinfo extends Component {
         <SettingsTitle>Profile Info</SettingsTitle>
         <InputBox>
           <SettingsSubTitle>Name</SettingsSubTitle>
-          <SettingsInput contenteditable="true" type="text" name="name" placeholder={this.props.user.about} />
+          <SettingsInput contenteditable="true" type="text" name="name">
+            {this.props.user.name}
+          </SettingsInput>
         </InputBox>
         <InputBox>
           <SettingsSubTitle>City</SettingsSubTitle>
-          <SettingsInput type="text" name="city" />
+          <SettingsInput type="text" name="city">
+          {/* {this.props.user.homeworld} */}
+          </SettingsInput>
         </InputBox>
         <InputBox>
           <SettingsSubTitle>Phone Number</SettingsSubTitle>
-          <SettingsInput type="text" name="phone" />
+          <SettingsInput type="text" name="phone">
+          519-504-3402
+          </SettingsInput>
         </InputBox>
       </Outerbox>
     )

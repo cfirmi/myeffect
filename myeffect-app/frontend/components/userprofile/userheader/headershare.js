@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import ShareButton from '../../constants/subjective/sharebutton'
+import ShareButton from '../../styles/sharebutton'
 
  const Outerbox = styled.div`
   grid-column: 3 / -1;

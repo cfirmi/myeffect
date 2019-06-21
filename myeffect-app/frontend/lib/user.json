@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Christian Firmi",
+    "username": "cfirmi",
+    "email": "cfirmi@gmail.com",
+    "address": {
+      "street": "Water Street",
+      "suite": "",
+      "city": "Kitchener",
+      "zipcode": "n2h5a6c"
+    },
+    "phone": "519-504-3402",
+    "website": "cfirmi.com",
+    "about": "There are so many cool things about me omg",
+    "links": {
+      "facebook": "fb/cfirmi",
+      "youtube": "yt/cfirmi",
+      "twitter": "tw/cfirmi",
+      "linkedin": "ld/cfirmi",
+      "instagram": "in/cfirmi",
+      "google_plus": "gp/cfirmi"
+    },
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net"
+    }
+  }
+]

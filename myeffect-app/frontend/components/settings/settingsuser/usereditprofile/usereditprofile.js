@@ -20,10 +20,10 @@ export default class usereditprofile extends Component {
   render() {
     return (
       <Outerbox>
-        <UserPhoto />
+        <UserPhoto user={this.props.user} />
         <UserAbout user={this.props.user} />
-        <UserInfo />
-        <UserLinks />
+        <UserInfo user={this.props.user} />
+        <UserLinks user={this.props.user} />
       </Outerbox>
     )
   }

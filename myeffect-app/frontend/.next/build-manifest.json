@@ -11,11 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/settings": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/settings": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
