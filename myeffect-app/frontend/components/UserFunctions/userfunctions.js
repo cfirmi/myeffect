@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const register = newUser => {
+const register = (newUser ) => {
   return axios 
     .post('/users/register', {
       name: newUser.name,
