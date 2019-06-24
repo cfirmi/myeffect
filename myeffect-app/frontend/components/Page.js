@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled, { ThemeProvider, injectGlobal } from 'styled-components'
+import Navigation from '../components/navigation/navigation'
 import Meta from '../components/Meta'
 
 const theme = {
@@ -89,7 +90,6 @@ input, textarea, select, a { outline: none; }
 export default class Page extends Component {
   render() {
     return (
-  <Provider store={store}>    
       <ThemeProvider theme={theme}>
         <StylePage>
           <Meta />
@@ -99,7 +99,6 @@ export default class Page extends Component {
           </Layout>
         </StylePage>
       </ThemeProvider>
-  </Provider>   
     );
   }
 };
