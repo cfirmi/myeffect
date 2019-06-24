@@ -23,16 +23,10 @@ export default class profile extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      user: {
-        firstName: 'Christian',
-        lastName: 'Firmi',
-        birthday: '1995-03-25',
-        age: '24',
-        profileImage: "../../static/images/profile/header/me.jpg",
-        bannerImage: "../../static/images/profile/header/me.jpg"
-      }
+      user: {}
     }
   }
+
   render() {
     return (
       <Outerbox >

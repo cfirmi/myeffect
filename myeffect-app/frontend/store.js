@@ -1,11 +1,9 @@
 import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
+import { create } from 'domain';
 
-const exampleInitialState = {
-  lastUpdate: 0,
-  light: false,
-  count: 0
-}
+const initialState = {}
 
 export const actionTypes = {
   TICK: 'TICK',
@@ -14,20 +12,24 @@ export const actionTypes = {
   RESET: 'RESET'
 }
 
+const middleware = [thunk]
+
 // REDUCERS
 export const reducer = (state = exampleInitialState, action) => {
   switch (action.type) {
-    default:
-      return state
+  default:
+    return state
   }
 }
-
-// ACTIONS
-
-export function initializeStore (initialState = exampleInitialState) {
+  
+  // ACTIONS
+  
+  export function initializeStore (initialState = exampleInitialState) {
   return createStore(
     reducer,
     initialState,
     composeWithDevTools(applyMiddleware())
   )
-}
+  }
+
+  export default store = createStore(rootreducer, initialStatem, applyMiddleware(...middleware))

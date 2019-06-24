@@ -1,10 +1,10 @@
-const LocalStrategy = require('passport-local').Strategy
+// const LocalStrategy = require('passport-local').Strategy
 const express = require('express')
 const user = express.Router()
 const cors = require('cors')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const auth = require('../../middleware/auth')
+// const auth = require('../../middleware/auth')
 
 
 const User = require('../models/User')

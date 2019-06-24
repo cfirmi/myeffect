@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+
 const db = {}
 
 const sequelize = new Sequelize('myeffect2', 'root', 'captainRitz95', {
