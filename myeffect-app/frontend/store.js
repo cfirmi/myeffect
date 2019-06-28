@@ -1,35 +1,23 @@
 import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { create } from 'domain';
 
-const initialState = {}
+const initState = {
+
+}
 
 export const actionTypes = {
-  TICK: 'TICK',
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT',
-  RESET: 'RESET'
 }
-
-const middleware = [thunk]
 
 // REDUCERS
-export const reducer = (state = exampleInitialState, action) => {
-  switch (action.type) {
-  default:
-    return state
-  }
+export const reducer = (state = initState, action) => {
 }
-  
-  // ACTIONS
-  
-  export function initializeStore (initialState = exampleInitialState) {
+
+// ACTIONS
+
+export function initializeStore (initialState = initState) {
   return createStore(
     reducer,
     initialState,
     composeWithDevTools(applyMiddleware())
   )
-  }
-
-  export default store = createStore(rootreducer, initialStatem, applyMiddleware(...middleware))
+}

@@ -49,6 +49,8 @@ class links extends Component {
   }
   renderNavItems() {
     return(
+      {
+
       <NavItem>
         {this.state.navItems.map(item => (
           <Link key={item.id} href={`/${item.link}`}>
@@ -63,6 +65,7 @@ class links extends Component {
           </Link>
         ))}
       </NavItem>
+      }
     )
   }
   render() {
